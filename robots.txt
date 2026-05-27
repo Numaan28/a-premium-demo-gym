@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+Disallow: /admin/
+Disallow: /private/
+Disallow: /*.json$
+
+Sitemap: https://www.ironforge.com/sitemap.xml
+
+# Crawl-delay for respectful bots
+Crawl-delay: 10

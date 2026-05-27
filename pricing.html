@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Primary SEO Meta -->
+  <title>Membership Pricing | IRONFORGE Gym Los Angeles</title>
+  <meta name="description" content="Transparent gym membership pricing at IRONFORGE. Choose from Starter, Performance, or Elite plans — all including unlimited gym access, class bookings, and certified coach support." />
+  <meta name="keywords" content="gym membership pricing Los Angeles, monthly gym plans, affordable personal training, IRONFORGE membership cost, fitness center pricing" />
+  <meta name="author"  content="IRONFORGE Gym" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.ironforge.com/pricing.html" />
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:url"         content="https://www.ironforge.com/pricing.html" />
+  <meta property="og:title"       content="Membership Pricing | IRONFORGE Gym" />
+  <meta property="og:description" content="Transparent gym membership plans from $49/mo. No hidden fees — just coaching, equipment, and community." />
+  <meta property="og:image"       content="https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?w=1200&q=80" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:title"       content="Membership Pricing | IRONFORGE Gym" />
+  <meta name="twitter:description" content="Gym membership plans from $49/month. Clear pricing, no lock-ins." />
+  <meta name="twitter:image"       content="https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?w=1200&q=80" />
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏋</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Pricing-specific styles -->
+  <style>
+    .pricing__toggle {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      margin-bottom: 56px;
+    }
+    .pricing__toggle-label {
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      color: var(--color-text-sec);
+    }
+    .toggle-switch {
+      position: relative;
+      width: 52px;
+      height: 28px;
+      cursor: pointer;
+    }
+    .toggle-switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+      position: absolute;
+    }
+    .toggle-track {
+      position: absolute;
+      inset: 0;
+      background-color: var(--color-surface-2);
+      border: 1px solid var(--color-border);
+      border-radius: 14px;
+      transition: background-color var(--t-base), border-color var(--t-base);
+    }
+    .toggle-switch input:checked + .toggle-track {
+      background-color: var(--color-accent);
+      border-color: var(--color-accent);
+    }
+    .toggle-thumb {
+      position: absolute;
+      top: 3px;
+      left: 3px;
+      width: 20px;
+      height: 20px;
+      background: var(--color-text-sec);
+      border-radius: 50%;
+      transition: transform var(--t-base), background-color var(--t-base);
+    }
+    .toggle-switch input:checked ~ .toggle-thumb {
+      transform: translateX(24px);
+      background: #080808;
+    }
+    .toggle-annual-badge {
+      display: inline-block;
+      background-color: rgba(200,169,110,0.15);
+      color: var(--color-accent);
+      font-size: 9px;
+      font-weight: 800;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      padding: 4px 10px;
+      border-radius: 10px;
+    }
+
+    .compare-section { padding-top: 0; }
+
+    @media (max-width: 768px) {
+      .pricing__toggle { gap: 10px; flex-wrap: wrap; justify-content: center; }
+    }
+  </style>
+
+  <!-- JSON-LD: Breadcrumb -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home",    "item": "https://www.ironforge.com/" },
+      { "@type": "ListItem", "position": 2, "name": "Pricing", "item": "https://www.ironforge.com/pricing.html" }
+    ]
+  }
+  </script>
+
+  <!-- JSON-LD: Offer Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "IRONFORGE Gym Membership Plans",
+    "itemListElement": [
+      {
+        "@type": "ListItem", "position": 1,
+        "item": {
+          "@type": "Product",
+          "name": "Starter Membership",
+          "description": "Full gym access, locker room, and basic class bookings.",
+          "offers": { "@type": "Offer", "price": "49.00", "priceCurrency": "USD", "availability": "https://schema.org/InStock" }
+        }
+      },
+      {
+        "@type": "ListItem", "position": 2,
+        "item": {
+          "@type": "Product",
+          "name": "Performance Membership",
+          "description": "Everything in Starter plus unlimited group classes, one PT session/month, and nutrition guidance.",
+          "offers": { "@type": "Offer", "price": "89.00", "priceCurrency": "USD", "availability": "https://schema.org/InStock" }
+        }
+      },
+      {
+        "@type": "ListItem", "position": 3,
+        "item": {
+          "@type": "Product",
+          "name": "Elite Membership",
+          "description": "Unlimited everything — 4 PT sessions monthly, priority class booking, body composition scans, and VIP locker room.",
+          "offers": { "@type": "Offer", "price": "149.00", "priceCurrency": "USD", "availability": "https://schema.org/InStock" }
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+
+  <!-- ░░ NAVBAR ░░ -->
+  <header class="navbar" role="banner">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__logo" aria-label="IRONFORGE Gym — Home">
+        <span class="navbar__logo-main">IRONFORGE</span>
+        <span class="navbar__logo-sub">Premium Fitness</span>
+      </a>
+      <nav class="navbar__nav" role="navigation" aria-label="Primary navigation">
+        <a href="index.html"    class="navbar__link">Home</a>
+        <a href="services.html" class="navbar__link">Services</a>
+        <a href="pricing.html"  class="navbar__link">Pricing</a>
+        <a href="contact.html"  class="navbar__link">Contact</a>
+      </nav>
+      <div class="navbar__actions">
+        <a href="pricing.html" class="btn btn--primary">Join Now</a>
+        <button class="navbar__hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobileMenu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <nav class="navbar__mobile" id="mobileMenu" role="navigation" aria-label="Mobile navigation">
+    <a href="index.html"    class="navbar__mobile-link">Home</a>
+    <a href="services.html" class="navbar__mobile-link">Services</a>
+    <a href="pricing.html"  class="navbar__mobile-link">Pricing</a>
+    <a href="contact.html"  class="navbar__mobile-link">Contact</a>
+    <a href="pricing.html"  class="btn btn--primary btn--lg navbar__mobile-cta">Start Today</a>
+  </nav>
+
+  <main id="main-content">
+
+    <!-- ░░ PAGE HERO ░░ -->
+    <section class="page-hero" aria-labelledby="page-title">
+      <div class="page-hero__bg-word" aria-hidden="true">PRICING</div>
+      <div class="container">
+        <div class="page-hero__eyebrow">
+          <span class="page-hero__line" aria-hidden="true"></span>
+          <span class="page-hero__tag">Membership Plans</span>
+        </div>
+        <h1 class="page-hero__title" id="page-title">Invest in <span>Yourself</span></h1>
+        <p class="page-hero__subtitle">
+          Three straightforward plans. No hidden fees, no lock-in contracts, no surprises on your statement. Cancel anytime with 30 days notice.
+        </p>
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html"   class="breadcrumb__item">Home</a>
+          <span class="breadcrumb__sep" aria-hidden="true">/</span>
+          <span class="breadcrumb__item current" aria-current="page">Pricing</span>
+        </nav>
+      </div>
+    </section>
+
+    <!-- ░░ PRICING CARDS ░░ -->
+    <section class="section" aria-labelledby="plans-title">
+      <div class="container">
+
+        <header class="section-header text-center reveal">
+          <span class="section-tag">Choose Your Plan</span>
+          <h2 class="section-title" id="plans-title">Simple, <span>Transparent Pricing</span></h2>
+          <p class="section-subtitle">Every plan includes unlimited gym access, use of all equipment, and a free onboarding session with a certified coach.</p>
+        </header>
+
+        <!-- Billing Toggle -->
+        <div class="pricing__toggle reveal" role="group" aria-labelledby="billing-toggle-label">
+          <span class="pricing__toggle-label" id="billing-toggle-label">Monthly</span>
+          <label class="toggle-switch" aria-label="Switch to annual billing for 20% savings">
+            <input type="checkbox" id="billingToggle" aria-checked="false" />
+            <span class="toggle-track"></span>
+            <span class="toggle-thumb"></span>
+          </label>
+          <span class="pricing__toggle-label" aria-live="polite" id="annual-label">Annual <span class="toggle-annual-badge">Save 20%</span></span>
+        </div>
+
+        <div class="pricing__grid">
+
+          <!-- Starter -->
+          <article class="price-card reveal d1">
+            <div class="price-card__tier">Tier 01</div>
+            <h2 class="price-card__name">Starter</h2>
+            <p class="price-card__desc">Perfect for independent lifters who want a world-class facility and the freedom to train on their own terms.</p>
+
+            <div class="price-card__amount">
+              <div class="price-card__price">
+                <span class="price-card__currency">$</span><span data-price>49</span>
+              </div>
+              <p class="price-card__period">per month · billed monthly</p>
+            </div>
+
+            <ul class="price-card__features" aria-label="Starter plan features">
+              <li class="price-card__feature">
+                <svg class="price-card__feat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                Unlimited gym floor access
+              </li>
+              <li class="price-card__feature">
+                <svg class="price-card__feat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                Full equipment access (racks, cardio, turf)
+              </li>
+              <li class="price-card__feature">
+                <svg class="price-card__feat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                Free onboarding session
+              </li>
+              <li class="price-card__feature">
+                <svg class="price-card__feat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                Standard locker room access
+              </li>
+              <li class="price-card__feature price-card__feature--off">
+                <svg class="price-card__feat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                Group class access
+              </li>
+              <li class="price-card__feature price-card__feature--off">
+                <svg class="price-card__feat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                Nutrition guidance
+              </li>
+              <li class="price-card__feature price-card__feature--off">
+                <svg class="price-card__feat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                Monthly PT sessions
+              </li>
+            </ul>
+
+            <a href="contact.html" class="btn btn--ghost" style="width:100%;justify-content:center;" aria-label="Get started with Starter plan">Get Started</a>
+          </article>
+
+          <!-- Performance (Featured) -->
+          <article class="price-card price-card--featured reveal d2">
+            <div class="price-card__badge" aria-label="Most popular plan">Most Popular</div>
+            <div class="price-card__tier">Tier 02</div>
+            <h2 class="price-card__name">Performance</h2>
+            <p class="price-card__desc">The most popular choice. Designed for members who want structured coaching, group energy, and measurable monthly progress.</p>
+
+            <div class="price-card__amount">
+              <div class="price-card__price">
+                <span class="price-card__currency">$</span><span data-price>89</span>
+              </div>
+              <p class="price-card__period">per month · billed monthly</p>
+            </div>
+
+            <ul class="price-card__features" aria-label="Performance plan features">
+              <li class="price-card__feature">
+                <svg class="price-card__feat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                Everything in Starter
+              </li>
+              <li class="price-card__feature">
+                <svg class="price-card__feat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                Unlimited group class access
+              </li>
+              <li class="price-card__feature">
+                <svg class="price-card__feat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                1 personal training session / month
+              </li>
+              <li class="price-card__feature">
+                <svg class="price-card__feat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                Monthly nutrition check-in
+              </li>
+              <li class="price-card__feature">
+                <svg class="price-card__feat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                Body composition assessment
+              </li>
+              <li class="price-card__feature">
+                <svg class="price-card__feat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                Priority class booking (24h early)
+              </li>
+              <li class="price-card__feature price-card__feature--off">
+                <svg class="price-card__feat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                VIP locker room
+              </li>
+            </ul>
+
+            <a href="contact.html" class="btn btn--primary" style="width:100%;justify-content:center;" aria-label="Get started with Performance plan">Get Started <span class="btn-arrow" aria-hidden="true">→</span></a>
+          </article>
+
+          <!-- Elite -->
+          <article class="price-card reveal d3">
+            <div class="price-card__tier">Tier 03</div>
+            <h2 class="price-card__name">Elite</h2>
+            <p class="price-card__desc">Total access. For serious athletes and executives who want the absolute maximum from their IRONFORGE membership.</p>
+
+            <div class="price-card__amount">
+              <div class="price-card__price">
+                <span class="price-card__currency">$</span><span data-price>149</span>
+              </div>
+              <p class="price-card__period">per month · billed monthly</p>
+            </div>
+
+            <ul class="price-card__features" aria-label="Elite plan features">
+              <li class="price-card__feature">
+                <svg class="price-card__feat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                Everything in Performance
+              </li>
+              <li class="price-card__feature">
+                <svg class="price-card__feat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                4 personal training sessions / month
+              </li>
+              <li class="price-card__feature">
+                <svg class="price-card__feat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                Full nutrition plan and support
+              </li>
+              <li class="price-card__feature">
+                <svg class="price-card__feat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                Monthly DEXA/InBody scan
+              </li>
+              <li class="price-card__feature">
+                <svg class="price-card__feat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                VIP locker room &amp; private shower
+              </li>
+              <li class="price-card__feature">
+                <svg class="price-card__feat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                Guest day passes (2/month)
+              </li>
+              <li class="price-card__feature">
+                <svg class="price-card__feat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                Priority booking for all sessions
+              </li>
+            </ul>
+
+            <a href="contact.html" class="btn btn--outline" style="width:100%;justify-content:center;" aria-label="Get started with Elite plan">Get Started <span class="btn-arrow" aria-hidden="true">→</span></a>
+          </article>
+
+        </div>
+        <!-- end pricing grid -->
+
+      </div>
+    </section>
+
+    <!-- ░░ FEATURE COMPARISON TABLE ░░ -->
+    <section class="compare-section section section--alt" aria-labelledby="compare-title">
+      <div class="container">
+        <header class="section-header text-center reveal">
+          <span class="section-tag">Side-by-Side</span>
+          <h2 class="section-title" id="compare-title">Full <span>Feature Comparison</span></h2>
+          <p class="section-subtitle">Everything included in each plan, laid out clearly so you can make the right call without reading the fine print.</p>
+        </header>
+
+        <div class="compare-wrap reveal">
+          <table class="compare-table" role="table">
+            <caption class="sr-only">Comparison of IRONFORGE membership plan features</caption>
+            <thead>
+              <tr>
+                <th scope="col" class="col-feat">Feature</th>
+                <th scope="col">Starter <br><span style="font-size:11px;color:var(--color-text-sec);font-weight:400;">$49/mo</span></th>
+                <th scope="col" class="col-pop">Performance <br><span style="font-size:11px;font-weight:400;">$89/mo</span></th>
+                <th scope="col">Elite <br><span style="font-size:11px;color:var(--color-text-sec);font-weight:400;">$149/mo</span></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Unlimited gym floor access</td>
+                <td><span class="check" aria-label="Included">✓</span></td>
+                <td class="col-pop"><span class="check" aria-label="Included">✓</span></td>
+                <td><span class="check" aria-label="Included">✓</span></td>
+              </tr>
+              <tr>
+                <td>All equipment (racks, cardio, turf)</td>
+                <td><span class="check" aria-label="Included">✓</span></td>
+                <td class="col-pop"><span class="check" aria-label="Included">✓</span></td>
+                <td><span class="check" aria-label="Included">✓</span></td>
+              </tr>
+              <tr>
+                <td>Free onboarding session</td>
+                <td><span class="check" aria-label="Included">✓</span></td>
+                <td class="col-pop"><span class="check" aria-label="Included">✓</span></td>
+                <td><span class="check" aria-label="Included">✓</span></td>
+              </tr>
+              <tr>
+                <td>Standard locker room</td>
+                <td><span class="check" aria-label="Included">✓</span></td>
+                <td class="col-pop"><span class="check" aria-label="Included">✓</span></td>
+                <td><span class="check" aria-label="Included">✓</span></td>
+              </tr>
+              <tr>
+                <td>Unlimited group classes</td>
+                <td><span class="cross" aria-label="Not included">—</span></td>
+                <td class="col-pop"><span class="check" aria-label="Included">✓</span></td>
+                <td><span class="check" aria-label="Included">✓</span></td>
+              </tr>
+              <tr>
+                <td>Monthly PT sessions</td>
+                <td><span class="cross" aria-label="Not included">—</span></td>
+                <td class="col-pop">1 session</td>
+                <td>4 sessions</td>
+              </tr>
+              <tr>
+                <td>Nutrition check-in</td>
+                <td><span class="cross" aria-label="Not included">—</span></td>
+                <td class="col-pop">Monthly</td>
+                <td>Full plan</td>
+              </tr>
+              <tr>
+                <td>Body composition assessment</td>
+                <td><span class="cross" aria-label="Not included">—</span></td>
+                <td class="col-pop"><span class="check" aria-label="Included">✓</span></td>
+                <td>Monthly DEXA</td>
+              </tr>
+              <tr>
+                <td>Priority class booking</td>
+                <td><span class="cross" aria-label="Not included">—</span></td>
+                <td class="col-pop">24h early</td>
+                <td>48h early</td>
+              </tr>
+              <tr>
+                <td>VIP locker room &amp; private shower</td>
+                <td><span class="cross" aria-label="Not included">—</span></td>
+                <td class="col-pop"><span class="cross" aria-label="Not included">—</span></td>
+                <td><span class="check" aria-label="Included">✓</span></td>
+              </tr>
+              <tr>
+                <td>Guest day passes per month</td>
+                <td><span class="cross" aria-label="Not included">—</span></td>
+                <td class="col-pop"><span class="cross" aria-label="Not included">—</span></td>
+                <td>2 passes</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ░░ FAQ ░░ -->
+    <section class="section faq" aria-labelledby="faq-title">
+      <div class="container">
+        <header class="section-header text-center reveal">
+          <span class="section-tag">FAQ</span>
+          <h2 class="section-title" id="faq-title">Questions We <span>Hear Often</span></h2>
+          <p class="section-subtitle">If your question isn't here, reach us directly — we're happy to walk you through anything before you commit.</p>
+        </header>
+
+        <ol class="faq__list" aria-label="Frequently asked questions about membership">
+
+          <li class="faq__item">
+            <button class="faq__question" aria-expanded="false">
+              <span class="faq__q-text">Is there a joining fee or any hidden charges?</span>
+              <span class="faq__toggle" aria-hidden="true">+</span>
+            </button>
+            <div class="faq__answer" role="region">
+              <p class="faq__a-text">No joining fee, no enrollment charge, no equipment fee. The monthly price you see is exactly what you pay. There are no contracts longer than month-to-month unless you specifically choose an annual plan for the discounted rate.</p>
+            </div>
+          </li>
+
+          <li class="faq__item">
+            <button class="faq__question" aria-expanded="false">
+              <span class="faq__q-text">Can I cancel my membership at any time?</span>
+              <span class="faq__toggle" aria-hidden="true">+</span>
+            </button>
+            <div class="faq__answer" role="region">
+              <p class="faq__a-text">Absolutely. Month-to-month members can cancel with 30 days written notice and won't be charged after that period. Annual plan members can cancel too, though the remaining balance of the annual term is non-refundable.</p>
+            </div>
+          </li>
+
+          <li class="faq__item">
+            <button class="faq__question" aria-expanded="false">
+              <span class="faq__q-text">Can I freeze my membership if I'm traveling or injured?</span>
+              <span class="faq__toggle" aria-hidden="true">+</span>
+            </button>
+            <div class="faq__answer" role="region">
+              <p class="faq__a-text">Yes. Members can freeze their membership for up to 60 days per calendar year at no charge. This is handled through your member portal or by speaking with our front desk team. We'll pause your billing and resume it when you're ready.</p>
+            </div>
+          </li>
+
+          <li class="faq__item">
+            <button class="faq__question" aria-expanded="false">
+              <span class="faq__q-text">Do the personal training sessions roll over if I don't use them?</span>
+              <span class="faq__toggle" aria-hidden="true">+</span>
+            </button>
+            <div class="faq__answer" role="region">
+              <p class="faq__a-text">PT sessions included in your membership plan do not roll over month to month — we intentionally design it this way to keep your training consistent. However, any additional PT sessions purchased à la carte are valid for 3 months from purchase date.</p>
+            </div>
+          </li>
+
+          <li class="faq__item">
+            <button class="faq__question" aria-expanded="false">
+              <span class="faq__q-text">I'm a complete beginner — is IRONFORGE right for me?</span>
+              <span class="faq__toggle" aria-hidden="true">+</span>
+            </button>
+            <div class="faq__answer" role="region">
+              <p class="faq__a-text">Absolutely. While our facility attracts competitive athletes, the majority of our members are working professionals, beginners, and everyday people who simply want to improve. Every new member receives an onboarding session, and our coaches are specifically trained to work across all fitness levels with patience and precision.</p>
+            </div>
+          </li>
+
+          <li class="faq__item">
+            <button class="faq__question" aria-expanded="false">
+              <span class="faq__q-text">Can I upgrade or downgrade my plan after joining?</span>
+              <span class="faq__toggle" aria-hidden="true">+</span>
+            </button>
+            <div class="faq__answer" role="region">
+              <p class="faq__a-text">Yes — plan changes take effect on your next billing cycle. Upgrades are immediate if you'd prefer not to wait. Downgrades are processed at the end of your current billing period. Speak to a team member or email us at info@ironforge.com to make a change.</p>
+            </div>
+          </li>
+
+          <li class="faq__item">
+            <button class="faq__question" aria-expanded="false">
+              <span class="faq__q-text">Does the annual plan include all the same features?</span>
+              <span class="faq__toggle" aria-hidden="true">+</span>
+            </button>
+            <div class="faq__answer" role="region">
+              <p class="faq__a-text">Yes — the annual plan is identical in features to the monthly plan at the same tier. The only difference is the billing frequency (paid upfront or in 12 monthly installments at the discounted rate) and the approximately 20% savings versus month-to-month pricing.</p>
+            </div>
+          </li>
+
+        </ol>
+      </div>
+    </section>
+
+    <!-- ░░ PRICING CTA ░░ -->
+    <section class="cta-banner" aria-labelledby="pricing-cta-title">
+      <div class="container">
+        <div class="cta-banner__inner">
+          <div class="cta-banner__text reveal-left">
+            <h2 class="cta-banner__title" id="pricing-cta-title">Still Have <span>Questions?</span></h2>
+            <p class="cta-banner__subtitle">
+              We offer a no-pressure free consultation for anyone considering joining. Come in, meet the team, and see the facility before you commit to a single dollar.
+            </p>
+          </div>
+          <div class="cta-banner__actions reveal-right">
+            <a href="contact.html" class="btn btn--primary btn--lg">Book a Free Tour <span class="btn-arrow" aria-hidden="true">→</span></a>
+            <a href="services.html" class="btn btn--outline btn--lg">See All Services</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ░░ FOOTER ░░ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__brand-logo">
+            <span class="footer__logo-main">IRONFORGE</span>
+            <span class="footer__logo-sub">Premium Fitness</span>
+          </div>
+          <p class="footer__brand-desc">Los Angeles' elite training destination. Built for those who refuse to compromise on results, equipment, or coaching quality.</p>
+          <nav class="footer__socials" aria-label="Social media links">
+            <a href="#" class="footer__social-link" aria-label="IRONFORGE on Instagram" rel="noopener noreferrer">ig</a>
+            <a href="#" class="footer__social-link" aria-label="IRONFORGE on Facebook"  rel="noopener noreferrer">fb</a>
+            <a href="#" class="footer__social-link" aria-label="IRONFORGE on Twitter"   rel="noopener noreferrer">tw</a>
+            <a href="#" class="footer__social-link" aria-label="IRONFORGE on YouTube"   rel="noopener noreferrer">yt</a>
+          </nav>
+        </div>
+        <div>
+          <h3 class="footer__col-title">Quick Links</h3>
+          <nav class="footer__links" aria-label="Footer navigation">
+            <a href="index.html"    class="footer__link">Home</a>
+            <a href="services.html" class="footer__link">Services</a>
+            <a href="pricing.html"  class="footer__link">Membership</a>
+            <a href="contact.html"  class="footer__link">Contact</a>
+          </nav>
+        </div>
+        <div>
+          <h3 class="footer__col-title">Plans</h3>
+          <nav class="footer__links" aria-label="Plans navigation">
+            <a href="pricing.html" class="footer__link">Starter — $49/mo</a>
+            <a href="pricing.html" class="footer__link">Performance — $89/mo</a>
+            <a href="pricing.html" class="footer__link">Elite — $149/mo</a>
+            <a href="pricing.html" class="footer__link">Annual Savings</a>
+          </nav>
+        </div>
+        <div>
+          <h3 class="footer__col-title">Get In Touch</h3>
+          <address style="font-style:normal;">
+            <div class="footer__contact-item">
+              <span class="footer__ci-icon" aria-hidden="true">📍</span>
+              <span class="footer__ci-text">2847 Industrial Blvd<br>Los Angeles, CA 90028</span>
+            </div>
+            <div class="footer__contact-item">
+              <span class="footer__ci-icon" aria-hidden="true">📞</span>
+              <a href="tel:+13235550147" class="footer__ci-text">+1 (323) 555-0147</a>
+            </div>
+            <div class="footer__contact-item">
+              <span class="footer__ci-icon" aria-hidden="true">✉️</span>
+              <a href="mailto:info@ironforge.com" class="footer__ci-text">info@ironforge.com</a>
+            </div>
+          </address>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copy">&copy; 2024 IRONFORGE Gym. All rights reserved.</p>
+        <nav class="footer__bottom-links" aria-label="Legal links">
+          <a href="#" class="footer__bottom-link">Privacy Policy</a>
+          <a href="#" class="footer__bottom-link">Terms of Use</a>
+          <a href="#" class="footer__bottom-link">Sitemap</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js" defer></script>
+</body>
+</html>
